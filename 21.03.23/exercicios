@@ -1,0 +1,33 @@
+--------------------EXERCÍCIOS
+
+PESQUISAR E APRENDER A USAR O EVENT ONINPUT
+
+DEFINIÇÃO E USO
+    Ocorre imediatament após a entrada do conteúdo, ou melhor, após a alteração do valor de um elemento input ou textarea
+
+SINTAXE
+    Sua sintaxe pode funciona de três maneiras pricipais
+    Em HTML:
+    <element oninput="myScript">
+
+    Em JAVASCRIPT:
+    object.oninput = function(){myScript()};
+
+    Em JavaScript, usando o método addEventListener():
+    object.addEventListener("input", myScript);
+
+TERCEIRO CASO
+    Neste pode-se ser encarado de uma outra maneira mais funcinal
+    <input type="range" id="MyFunction3" oninput="c(this.value)">
+    <p id="c" style="font-family: Alkatra;"></p>
+    <script> 
+        //TERCEIRO CASO
+        function c(value){
+        document.getElementById("c").innerText = value
+        }
+    </script>
+PESQUISAR E  APRENDER A USAR AS FUNÇÕES ARROW DO JAVASCRIPT (FUNÇÕES DE ROTA)
+
+PESQUISAR E FAZER EXEMPLOS DE OBJETOS EM JAVASCRIPT
+
+---------------------------------------------------------------------------------------------------------------

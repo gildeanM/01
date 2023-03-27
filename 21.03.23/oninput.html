@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oninput</title>
+    <style>
+        @font-face {
+            font-family: Alkatra;
+            src: url(Alkatra-Regular.ttf);
+        }
+    </style>
+</head>
+<body>
+    <!--PRIMEIRO CASO-->
+    <textarea name="" id="MyFunction" cols="30" rows="10" oninput="a()">
+    </textarea>
+    <p id="a" style="font-family: Alkatra;"></p>
+
+    <!--SEGUNDO CASO-->
+    <input type="text" id="MyFunction2" value="Gildean Morais da Silva">
+    <p id="b" style="font-family: Alkatra;"></p>
+
+    <!--TERCEIRO CASO-->
+    <input type="range" id="MyFunction3" oninput="c()">
+    <p id="c" style="font-family: Alkatra;"></p>
+    <script> 
+    //PRIMEIRO CASO     
+        function a(){
+            document.getElementById("a").innerText = document.getElementById("MyFunction").value
+        }
+        //SEGUNDO CASO
+        document.getElementById("MyFunction2").oninput = function b(){
+            document.getElementById("b").innerText = "O texto foi alterado"
+        }  
+        //TERCEIRO CASO
+        function c(){
+        document.getElementById("c").innerText = document.getElementById("MyFunction3").value
+        }
+    </script>
+</body>
+</html>
